@@ -6,6 +6,7 @@
  * Kroc Camen, and the H5BP dev community and team.
  */
 
+
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
@@ -103,7 +104,307 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/*Colores*/
 
+
+.color-primary-0 { color: #955BC7 }	/* Main Primary color */
+.color-primary-1 { color: #D4B3F0 }
+.color-primary-2 { color: #B382DD }
+.color-primary-3 { color: #793CAE }
+.color-primary-4 { color: #64229D }
+
+.color-secondary-1-0 { color: #D85AAC }	/* Main Secondary color (1) */
+.color-secondary-1-1 { color: #F4B2DD }
+.color-secondary-1-2 { color: #E781C4 }
+.color-secondary-1-3 { color: #C73B96 }
+.color-secondary-1-4 { color: #B41C7F }
+
+.color-secondary-2-0 { color: #CCF566 }	/* Main Secondary color (2) */
+.color-secondary-2-1 { color: #E9FCB8 }
+.color-secondary-2-2 { color: #D9F98B }
+.color-secondary-2-3 { color: #C0F148 }
+.color-secondary-2-4 { color: #A6DC23 }
+
+.color-complement-0 { color: #FFF86B }	/* Main Complement color */
+.color-complement-1 { color: #FFFCBA }
+.color-complement-2 { color: #FFFA8F }
+.color-complement-3 { color: #FFF74C }
+.color-complement-4 { color: #E9E125 }
+
+/*Fin Colores*/
+
+body {
+  color:#444444;
+  font-family: 'Raleway','Montserrat','Source Sans Pro',sans-serif;
+  font-weight: 400; 
+  font-style: normal;
+  line-height: 1.5;
+  font-size: 100%;
+}
+
+h1 {
+  font-family: 'Zilla Slab','Bree Serif','Roboto Slab','Vollkorn',serif;
+  font-weight: bold;
+  font-size: 300%;
+  line-height: 1.35;
+  letter-spacing: 0em;
+  margin-bottom: 1.25em;
+  color: black;
+}
+h1.header-hero__heading{
+	font-family: 'Montserrat','Raleway','Source Sans Pro',sans-serif;
+
+}
+h2 {
+  font-size: 250%;  
+  font-family: 'Raleway','Montserrat','Source Sans Pro',sans-serif;
+  font-weight: bold;
+  line-height: 1.35;
+  margin-bottom: 0.5em;
+  color: #444444;
+}
+h2.need_value{
+	font-family: 'Raleway','Montserrat','Source Sans Pro',sans-serif;
+}
+.h2 a {
+  text-decoration: none;
+  color: black;
+}
+
+h3 {
+  color:#444444;
+  font-size: 200%;
+  font-family: 'Zilla Slab','Bree Serif','Roboto Slab','Vollkorn',serif;
+  font-weight: bold;
+  line-height: 1.5;
+  margin-bottom: 0.3125em;
+}
+
+h4 {
+  color:#444444;
+  font-size: 130%;
+  font-family: 'Zilla Slab','Bree Serif','Roboto Slab','Vollkorn',serif;
+  line-height: 1.4;
+  margin-bottom: 0.625em;
+}
+
+h5 {
+  color:#444444;
+  font-size: 93%;
+  font-weight: bold;
+  font-family: 'Zilla Slab','Bree Serif','Roboto Slab','Vollkorn',serif;
+  line-height: 1.4;
+  text-transform: uppercase;
+  margin-bottom: 0.625em;
+  color: #555555;
+}
+
+.container{
+	display:block;
+}
+   .o-header{
+		background-color:#A493A8;
+		background-image:url(../img/bannerprueba.jpg);
+		position:relative;
+		width:100%;
+		height:5%;
+	}
+	.header-hero__heading{
+		color:#ffffff
+	}
+	.o-header-container{
+		min-height:5em;
+		
+	}
+	#logo{
+		font-size=0;
+		width:100%;
+		overflow:hidden;
+	}
+	.logo {
+	margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 100%;
+	max-width:500px;
+    min-height: 5%;
+	max-height:200px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 1;
+	padding-top:0.5%;
+}
+.need{
+	background-color:#FFFCE2;
+	overflow:hidden;
+}
+#referencias{
+	background-color:#FFFCBA;
+	
+}
+footer{
+	background-color:#D4B3F0;
+}
+.mod-document .o-header.header-size-m .header-hero {
+display: block;
+}
+.mod-document .o-header .header-hero {
+    display: block;
+    text-align: center;
+    position: relative;
+}
+#h-titulo{
+	display:none;
+}
+   
+.container-row {
+display: -webkit-flex;
+display: flex;
+-webkit-flex-flow: row wrap;
+flex-flow: row wrap;
+}
+.document-sidebar, .page {
+  width: 100%;
+}
+.document-sidebar .nav-pages .item > a {
+    font-family: "Source Sans Pro",'Montserrat', -apple-system, BlinkMacSystemFont, Roboto, Helvetica,'Raleway', Arial, sans-serif;
+    color: #64229D;
+    font-size: 1.3em;
+    line-height: 1.3;
+    font-weight: normal;
+    text-transform: none;
+    font-style: normal;
+    text-decoration: none;
+}
+.nav-pages .item>a {
+    display: block;
+    color: #555;
+    font-size: .9rem;
+    text-decoration: none;
+    line-height: 1.2;
+    padding: 0.3em;
+    position: relative;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul.category-pages{
+	list-style:none;
+	padding-left:0;
+}
+img.media{
+	width:100%;
+	max-width:40em;
+	padding: 1%;
+}
+img.vertical{
+	max-width:20em;
+}
+
+.btn-top {
+    display: block;
+    visibility: hidden;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    text-decoration: none;
+    color: #898989;
+    background-color: #fff;
+    border: 1px solid rgba(0,0,0,.2);
+    font-size: 25px;
+    text-align: center;
+    line-height: 27px;
+    -webkit-transition: opacity .3s 0s,visibility 0s .3s;
+    -moz-transition: opacity .3s 0s,visibility 0s .3s;
+    transition: opacity .3s 0s,visibility 0s .3s;
+}
+
+.btn-top.state-visible {
+    visibility: visible;
+    opacity: 1;
+    z-index: 100;
+}
+
+
+@media (min-width: 600px) {
+  .document-sidebar {
+    width: 25%;
+	position:absolute;
+	margin:auto;
+    overflow-y: auto;
+  }
+
+  .page {
+    width: 75%;
+	margin:auto;
+	margin-right:0;
+  }
+   .nav-pages {
+    padding: 35px 0 50px;
+    position: relative;
+	}
+	.document-sidebar.sticky {
+		position: fixed;
+		overflow: auto;
+		top:0;
+	}
+}
+@media (min-width: 700px){
+	#h-titulo{
+		display:block;
+		
+	}
+	.logo{
+		float: left;
+		position:absolute;
+		width:20%;
+	}
+	img.media{
+	width:75%;
+	}
+}
+@media (min-width: 800px) {
+	img.media{
+	width:60%;
+	}
+  .container-row {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+	h1 {
+	
+	font-size: 400%;
+	
+	}
+	
+	h2 {
+	  font-size: 300%;  
+	  
+	}
+	
+	h3 {
+	  
+	  font-size: 250%;
+	  
+	}
+
+	h4 {
+	  
+	  font-size: 150%;
+	  
+	}
+
+	h5 {
+	  font-size: 100%;
+	  
+	}
+  
+}
 
 
 
